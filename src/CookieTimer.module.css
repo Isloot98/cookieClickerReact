@@ -6,6 +6,7 @@
 
 .wobblyH1 {
   animation: wobble 2s ease-in-out infinite;
+  position: fixed;
 }
 
 @keyframes wobble {

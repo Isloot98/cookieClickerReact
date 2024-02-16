@@ -34,17 +34,17 @@ function App() {
       <div className={styles.outerDiv}>
         <div className={styles.columnOne}>
           <ClickCookie increaseCookies={setCookies} numOfCookies={cookies} />
+          <ResetButton
+            resetCount={setCookies}
+            setCookiesPerSecond={setCookiesPerSecond}
+            setUpgrades={setUpgrades}
+          />
         </div>
         <div className={styles.columnTwo}>
           <Timer
             count={cookies}
             setCount={setCookies}
             cookiesPerSecond={cookiesPerSecond}
-          />
-          <ResetButton
-            resetCount={setCookies}
-            setCookiesPerSecond={setCookiesPerSecond}
-            setUpgrades={setUpgrades}
           />
         </div>
         <div className={styles.columnThreeS}>

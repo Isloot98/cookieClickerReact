@@ -1,0 +1,27 @@
+.outerDiv {
+  display: flex;
+  column-gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.columnOne {
+  grid-column: 1;
+}
+
+.columnTwo {
+  grid-column: 2;
+}
+
+.columnThree {
+  grid-column: 3;
+}
+
+@media screen and (max-width: 600) {
+  .outerDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}

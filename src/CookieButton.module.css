@@ -1,0 +1,42 @@
+/* CookieButton.module.css */
+
+.cookie {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: fixed;
+}
+
+.cookie:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  cursor: pointer;
+}
+
+.cookie:active {
+  margin-top: 1rem;
+}
+
+.cookie img {
+  max-width: 10rem;
+}
+
+@keyframes cookie-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cookie {
+    animation: cookie-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cookie {
+    position: relative;
+  }
+}

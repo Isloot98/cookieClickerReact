@@ -10,6 +10,7 @@ const Upgrades = ({
   setUpgrades,
 }) => {
   console.log(upgrades);
+
   const buyUpgrades = (upgrade) => {
     if (cookies >= upgrade.cost) {
       setCookies(cookies - upgrade.cost);
@@ -46,6 +47,7 @@ const Upgrades = ({
             <br></br>
             <span>Cost: {upgrade.cost}</span>
             <span>{upgrade.quantity}</span>
+            <p>increase cookies by {upgrade.increase}</p>
           </div>
         ))}
       </div>

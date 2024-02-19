@@ -47,7 +47,7 @@ const Upgrades = ({
             <br></br>
             <span>Cost: {upgrade.cost}</span>
             <span>{upgrade.quantity}</span>
-            <p>increase cookies by {upgrade.increase}</p>
+            <p>increase cookies by {upgrade.increase} every second</p>
           </div>
         ))}
       </div>
